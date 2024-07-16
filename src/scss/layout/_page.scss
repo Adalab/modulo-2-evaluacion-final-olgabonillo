@@ -1,3 +1,33 @@
-.page__main {
+body {
+  background-color: black;
+  color: aquamarine;
+}
+
+main {
   padding-left: 30px;
+}
+
+.series-card {
+  width: 225px;
+}
+
+.series {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.series img {
+  width: 225px;
+  height: 313px;
+  object-fit: contain;
+}
+.results {
+  color: rgb(175, 168, 168);
+}
+
+.favorite {
+  border: 5px solid aquamarine;
+  border-radius: 2px;
+  color: aquamarine;
 }
