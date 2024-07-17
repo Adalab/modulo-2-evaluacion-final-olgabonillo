@@ -56,11 +56,12 @@ function showFavoritesSeries(){
     //Recojo la sección de los resultados 
     const favorites = document.querySelector(".js-favorites-series");
     //Inicializo el contenedor de favoritos y añado el titulo
-    favorites.innerHTML = `<h2>Series favoritas:</h2>`;
+    favorites.innerHTML = `<h2 class="favorites-series-title">Series favoritas:</h2>`;
     const localStorageFavorites = JSON.parse(localStorage.getItem('favorites'));
     for (const favoritesId of localStorageFavorites){
-        console.log("estoy dentro de la funcion showfavoritesSeries, y este es el id de la favorita: ", favoritesId)
+        console.log("estoy dentro de la funcion showFavoritesSeries, y este es el id de la favorita: ", favoritesId)
         showBoxSeriesById(favoritesId, favorites);
     }
 }
+
 showFavoritesSeries();

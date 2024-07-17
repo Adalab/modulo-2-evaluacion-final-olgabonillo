@@ -1,10 +1,32 @@
 body {
   background-color: black;
-  color: aquamarine;
+  color: $color-father;
 }
 
 main {
   padding-left: 30px;
+}
+
+.tittle-search-one {
+  font-family: $font-family;
+  font-weight: bold;
+  font-size: 150px;
+}
+.tittle-search {
+  width: 250px;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.button-search {
+  background-color: $color-father;
+  padding: 5px;
+  border-radius: solid 2px;
+  border-bottom: 2px;
+  margin: 5px;
+  font-family: $font-family;
+  font-size: 20px;
 }
 
 .series-card {
@@ -15,19 +37,47 @@ main {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  color: $color-container-favorites;
 }
 
 .series img {
-  width: 225px;
-  height: 313px;
-  object-fit: contain;
+    width: 225px;
+    height: 313px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.favorites-series-title {
+  font-family: $font-family;
+  color: $color-title-favorites;
+  background-color: $color-container-favorites;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results-title { 
+font-family: $font-family;
+color: $color-title-favorites;
+background-color: $color-container-results;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 .results {
-  color: rgb(175, 168, 168);
+  color: $color-border-favorites;
 }
 
 .favorite {
-  border: 5px solid aquamarine;
+  border: 5px solid $color-border-favorites;
   border-radius: 2px;
-  color: aquamarine;
+  color: $color-border-favorites;
 }
+
+.container-father-favorites {
+  border: 2px solid $color-container-favorites;
+}
+

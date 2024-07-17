@@ -18,7 +18,7 @@ button.addEventListener("click", (event) => {
         //Recojo la sección de los resultados 
         const results = document.querySelector(".js-results");
         //Inicializo el contenedor de resultados y añado el titulo
-        results.innerHTML = `<h2>Resultados:</h2>`;
+        results.innerHTML = `<h2 class="results-title">Resultados:</h2>`;
         object.data.forEach(function(data) {
             //Recojo información de cada uno de los títulos 
             console.log("data", data)
